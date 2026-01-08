@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer to Developer page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dev2dev.css">
+</head>
+<body>
+
+    <h2>Developer to Developer page</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Industry_Guides')">Industry Guides</button>
+        <button class="tablinks" onclick="openTab(event, 'Product_Guides')">Product Guides</button>
+        <button class="tablinks" onclick="openTab(event, 'Technical_Guides')">Technical Guides</button>
+        <button class="tablinks" onclick="openTab(event, 'Dev2Dev_Sessions')">Dev2Dev Sessions</button>
+    </div>
+<div class="tabcontent-container">
+    <!-- Industry Guides Tab -->
+    <div id="Industry_Guides" class="tabcontent">
+    </div>
+
+    <!-- Product_Guides Tab -->
+    <div id="Product_Guides" class="tabcontent">
+    </div>
+
+    <!-- Technical_Guides Tab -->
+    <div id="Technical_Guides" class="tabcontent">
+    </div>
+    <!-- Dev2Dev_Sessions Tab -->
+    <div id="Dev2Dev_Sessions" class="tabcontent">
+        <!-- Card 1 -->
+        <div class="card-container">
+            <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3254/demo-practical-llms?generated_by=30961&hash=6b41217c8e532b49ac68d4ac3b838598b66f2453" target="_blank">
+                <div class="card">
+                    <h4>DEMO Practical LLMs</h4>
+                    <p>This session, re-recorded after technical issues in the original run (Practical LLMs), is part of the 2025 Developer-to-Developer series. It explores the TRPC Chat Agent, explains what Large Language Models (LLMs) are and how they function, and highlights practical strategies for integrating AI-assisted tooling into development workflows to boost productivity.</p>
+                    <p><span>Duration:</span> 40 minutes</p>
+                </div>
+            </a>
+    <!-- Card 2 -->
+
+            <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3255/tools-for-finding-answers?generated_by=30961&hash=96dacf0d19c30d976d5966e174d4a6df97bccec0" target="_blank">
+                <div class="card">
+                    <h4>Tools for Finding Answers</h4>
+                    <p>This session is part of the Developer-to-Developer series in 2025. It explores the various documentation data sources available at WiseTech Global and demonstrates how Microsoft Copilot can help developers efficiently search for resources, leverage these resources to streamline workflows, and enhance productivity. </p>
+                    <p><span>Duration:</span> 34 minutes</p>
+                </div>
+            </a>
+    <!-- Card 3 -->
+
+            <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3256/latency-numbers-every-developer-should-know?generated_by=30961&hash=b07689e803b8f16311ce83e42b11d3580985c73c" target="_blank">
+                <div class="card">
+                    <h4>Latency Numbers Every Developer Should Know</h4>
+                    <p>This session is part of the 2025 Developer-to-Developer series. It highlights key latency numbers every developer should know and shares simple rules of thumb for making reliable performance decisions. </p>
+                    <p><span>Duration:</span> 55 minutes</p>
+                </div>
+            </a>
+<!-- Card 4 -->
+         
+            <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3257/docs-as-code?generated_by=30961&hash=8f23a1437650e0c4e81b021b7dcc6bd0c208f598" target="_blank">
+                <div class="card">
+                    <h4>Docs as Code</h4>
+                    <p>This session is part of the 2025 Developer-to-Developer series. It highlights how Wise Tech is shifting towards a new approach in Technical Content Management called Docs as Code, designed to enable scalability while increasing agility</p>
+                    <p><span>Duration:</span> 55 minutes</p>
+                </div>
+            </a>
+
+            <!-- Card 5 -->
+               
+            <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3258/how-long-does-it-take-to-complete-one-cargowise-work-item?generated_by=30961&hash=8264dd791d8f565062229f85a51bdd784e497c81" target="_blank">
+                <div class="card">
+                    <h4>How Long Does It Take to Complete One CargoWise Work Item?</h4>
+                    <p>This session is part of the 2025 Developer-to-Developer series. It presents a case study on a real work item, highlighting process bottlenecks and steps taken to remove them for improved efficiency</p>
+                    <p><span>Duration:</span> 55 minutes</p>
+                </div>
+            </a>      
+ <!-- Closing Div -->
+
+    </div>
+</div>
+
+    <!-- Javascript Code -->
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Open Dev2Dev Sessions tab by default
+        document.addEventListener("DOMContentLoaded", function() {
+            var button = document.querySelector("button[onclick=\"openTab(event, 'Dev2Dev_Sessions')\"]");
+            if (button) button.click();
+        });
+    </script>
+
+</body>
+</html>
