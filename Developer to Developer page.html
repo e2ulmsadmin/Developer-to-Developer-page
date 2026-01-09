@@ -18,20 +18,48 @@
     </div>
 <div class="tabcontent-container">
     <!-- Industry Guides Tab -->
+     
     <div id="Industry_Guides" class="tabcontent">
+
+            <!-- Card 1 -->
+        <div class="card-container">
+                        <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3260/the-supply-chain-and-logistics-industry-foundation-guide?generated_by=30961&hash=412211f7648a80d5cf78f54a2cd4b24e997a2222" target="_blank">
+                <div class="card">
+                    <h4>The Supply Chain and Logistics — Industry Foundation Guide</h4>
+                    <p>This guide provides a foundational understanding of supply chain and logistics, and the complexities involved in managing supply networks. </p>
+                    <p><span>Duration:</span> 20 minutes</p>
+                </div>
+            </a>
+
+             <!-- Closing Div -->
+
     </div>
+</div>
 
     <!-- Product_Guides Tab -->
     <div id="Product_Guides" class="tabcontent">
+        <p>Content for <b>Product Guides</b> Coming soon...</p>
     </div>
 
     <!-- Technical_Guides Tab -->
     <div id="Technical_Guides" class="tabcontent">
+        <p>Content for <b>Technical Guides</b> Coming soon...</p>
     </div>
+
+
     <!-- Dev2Dev_Sessions Tab -->
     <div id="Dev2Dev_Sessions" class="tabcontent">
         <!-- Card 1 -->
         <div class="card-container">
+                        <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3253/practical-llms?generated_by=30961&hash=f7c0eaecf11a48f52d6ece71c4afa1b77914bef7" target="_blank">
+                <div class="card">
+                    <h4>Practical LLMs</h4>
+                    <p>This session is part of the 2025 Developer-to-Developer series. It explores the TRPC Chat Agent, what Large Language Models (LLMs) are, how they function, and practical strategies for integrating AI-assisted tooling into development workflows to boost productivity.</p>
+                    <p><span>Duration:</span> 34 minutes</p>
+                </div>
+            </a>
+
+ <!-- Card 1 -->
             <a class="Cbtn1" href="https://e2open.docebosaas.com/learn/course/3254/demo-practical-llms?generated_by=30961&hash=6b41217c8e532b49ac68d4ac3b838598b66f2453" target="_blank">
                 <div class="card">
                     <h4>DEMO Practical LLMs</h4>
@@ -97,9 +125,9 @@
             evt.currentTarget.className += " active";
         }
 
-        // Open Dev2Dev Sessions tab by default
+        // Open Industry Guides tab by default
         document.addEventListener("DOMContentLoaded", function() {
-            var button = document.querySelector("button[onclick=\"openTab(event, 'Dev2Dev_Sessions')\"]");
+            var button = document.querySelector("button[onclick=\"openTab(event, 'Industry_Guides')\"]");
             if (button) button.click();
         });
     </script>
