@@ -11,10 +11,11 @@
     <h2>Developer to Developer page</h2>
 
     <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Dev2Dev_Sessions')">Dev2Dev Sessions</button>
         <button class="tablinks" onclick="openTab(event, 'Industry_Guides')">Industry Guides</button>
         <button class="tablinks" onclick="openTab(event, 'Product_Guides')">Product Guides</button>
         <button class="tablinks" onclick="openTab(event, 'Technical_Guides')">Technical Guides</button>
-        <button class="tablinks" onclick="openTab(event, 'Dev2Dev_Sessions')">Dev2Dev Sessions</button>
+       
     </div>
 <div class="tabcontent-container">
     <!-- Industry Guides Tab -->
@@ -127,7 +128,7 @@
 
         // Open Industry Guides tab by default
         document.addEventListener("DOMContentLoaded", function() {
-            var button = document.querySelector("button[onclick=\"openTab(event, 'Industry_Guides')\"]");
+            var button = document.querySelector("button[onclick=\"openTab(event, 'Dev2Dev_Sessions')\"]");
             if (button) button.click();
         });
     </script>
